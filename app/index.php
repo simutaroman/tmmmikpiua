@@ -95,7 +95,7 @@ else
 	<!-- Bootstrap -->
     <!-- build:css css/main.css -->
 	<!-- <link href = "css/bootswatch_cosmo/bootstrap.css" rel = "stylesheet"> -->
-	<link href = "../templates/tmmmikpiua/css/bootswatch_cosmo/bootstrap.css" rel = "stylesheet">
+	<link href = "/templates/tmmmikpiua/css/bootswatch_cosmo/bootstrap.css" rel = "stylesheet">
 	
 	<!-- endbuild -->
 	<jdoc:include type="head" />
@@ -222,8 +222,8 @@ else
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 	 -->
-	<script src="templates/tmmmikpiua/js/jquery.js"></script>
-    <script src="templates/tmmmikpiua/js/bootstrap.js"></script>
+	<script src="/templates/tmmmikpiua/js/jquery.js"></script>
+    <script src="/templates/tmmmikpiua/js/bootstrap.js"></script>
 	<!-- endbuild -->
 	
 </body>
