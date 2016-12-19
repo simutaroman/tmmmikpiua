@@ -48,18 +48,6 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="templateColor" class="" type="color" default="#08C"
-					label="TPL_TMMMIKPIUA_COLOR_LABEL"
-					description="TPL_TMMMIKPIUA_COLOR_DESC" />
-
-				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
-					label="TPL_TMMMIKPIUA_BACKGROUND_COLOR_LABEL"
-					description="TPL_TMMMIKPIUA_BACKGROUND_COLOR_DESC" />
-
-				<field name="logoFile" class="" type="media" default=""
-					label="TPL_TMMMIKPIUA_LOGO_LABEL"
-					description="TPL_TMMMIKPIUA_LOGO_DESC" />
-
 				<field name="sitetitle"  type="text" default=""
 					label="JGLOBAL_TITLE"
 					description="JFIELD_ALT_PAGE_TITLE_LABEL"
@@ -69,32 +57,6 @@
 					label="JGLOBAL_DESCRIPTION"
 					description="JGLOBAL_SUBHEADING_DESC"
 					filter="string" />
-
-				<field name="googleFont"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="TPL_TMMMIKPIUA_FONT_LABEL"
-					description="TPL_TMMMIKPIUA_FONT_DESC"
-				>
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
-
-				<field name="googleFontName" class="" type="text" default="Open+Sans"
-					label="TPL_TMMMIKPIUA_FONT_NAME_LABEL"
-					description="TPL_TMMMIKPIUA_FONT_NAME_DESC" />
-
-				<field name="fluidContainer"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="0"
-					label="TPL_TMMMIKPIUA_FLUID_LABEL"
-					description="TPL_TMMMIKPIUA_FLUID_DESC"
-				>
-					<option value="1">TPL_TMMMIKPIUA_FLUID</option>
-					<option value="0">TPL_TMMMIKPIUA_STATIC</option>
-				</field>
 			</fieldset>
 		</fields>
 	</config>

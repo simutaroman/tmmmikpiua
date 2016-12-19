@@ -99,47 +99,13 @@ else
 	
 	<!-- endbuild -->
 	<jdoc:include type="head" />
-	<?php // Use of Google Font ?>
-	<?php if ($this->params->get('googleFont')) : ?>
-		<link href='//fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName'); ?>' rel='stylesheet' type='text/css' />
-		<style type="text/css">
-			h1,h2,h3,h4,h5,h6,.site-title{
-				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName')); ?>', sans-serif;
-			}
-		</style>
-	<?php endif; ?>
-	<?php // Template color ?>
-	<?php if ($this->params->get('templateColor')) : ?>
-	<style type="text/css">
-		body.site
-		{
-			border-top: 3px solid <?php echo $this->params->get('templateColor'); ?>;
-			background-color: <?php echo $this->params->get('templateBackgroundColor'); ?>
-		}
-		a
-		{
-			color: <?php echo $this->params->get('templateColor'); ?>;
-		}
-		.nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
-		.btn-primary
-		{
-			background: <?php echo $this->params->get('templateColor'); ?>;
-		}
-	</style>
-	<?php endif; ?>
+
 	<!--[if lt IE 9]>
 		<script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script>
 	<![endif]-->
 </head>
 
-<body class="site <?php echo $option
-	. ' view-' . $view
-	. ($layout ? ' layout-' . $layout : ' no-layout')
-	. ($task ? ' task-' . $task : ' no-task')
-	. ($itemid ? ' itemid-' . $itemid : '')
-	. ($params->get('fluidContainer') ? ' fluid' : '');
-	echo ($this->direction == 'rtl' ? ' rtl' : '');
-?>">
+<body>
 
 	<!-- Body -->
 	<div class="body">
