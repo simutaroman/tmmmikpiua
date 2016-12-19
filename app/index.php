@@ -96,6 +96,8 @@ else
     <!-- build:css css/main.css -->
 	<!-- <link href = "css/bootswatch_cosmo/bootstrap.css" rel = "stylesheet"> -->
 	<link href = "/templates/tmmmikpiua/css/bootswatch_cosmo/bootstrap.css" rel = "stylesheet">
+	<link href = "/templates/tmmmikpiua/css/font-awesome.css" rel = "stylesheet">
+	
 	
 	<!-- endbuild -->
 	<jdoc:include type="head" />
