@@ -108,7 +108,6 @@ else
 </head>
 
 <body>
-
 	<!-- Body -->
 	<div class="body">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">

@@ -3,14 +3,21 @@
   "private": true,
   "version": "0.0.1",
   "description": "Joomla template for Manufacturing Engineering Department website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "manufacturing",
     "engineering",
-    "joomla"
+    "joomla",
+    "template",
+    "bootstrap"
   ],
   "author": "Roman Simuta",
   "license": "MIT",
   "devDependencies": {
+    "beepbeep": "^1.2.0",
     "browser-sync": "2.18.5",
     "del": "2.2.2",
     "gulp": "3.9.1",
@@ -26,6 +33,14 @@
     "gulp-uglify": "2.0.0",
     "gulp-usemin": "0.3.26",
     "gulp-copy": "^1.0.0",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.2.0",
+    "joomla-gulp": "^1.1.1",
+    "require-dir": "^0.3.0",
+    "xml2js": "^0.4.16",
     "jshint": "2.9.4",
     "jshint-stylish": "2.2.1"
   },
