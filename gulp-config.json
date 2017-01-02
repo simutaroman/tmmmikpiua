@@ -1,6 +1,6 @@
 {
 	"wwwDir"           : "D:/Endels/home/tmmmikpiua/www",
     "browserConfig" : {
-		"proxy" : "localhost"
+		"proxy" : "tmmmikpiua"
 	}
 }
