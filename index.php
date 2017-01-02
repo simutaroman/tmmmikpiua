@@ -1,11 +1,4 @@
 <?php
-/**
- * @package     Joomla.Site
- * @subpackage  Templates.protostar
- *
- * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
 
 defined('_JEXEC') or die;
 
@@ -29,64 +22,6 @@ $sitename = $app->get('sitename');
 // Output as HTML5
 $doc->setHtml5(true);
 
-if($task == "edit" || $layout == "form" )
-{
-	$fullWidth = 1;
-}
-else
-{
-	$fullWidth = 0;
-}
-
-// Add JavaScript Frameworks
-// JHtml::_('bootstrap.framework');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
-
-// Add Stylesheets
-// $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
-
-// Check for a custom CSS file
-// $userCss = JPATH_SITE . '/templates/' . $this->template . '/css/user.css';
-
-// if (file_exists($userCss) && filesize($userCss) > 0)
-// {
-// 	$doc->addStyleSheetVersion('templates/' . $this->template . '/css/user.css');
-// }
-
-// Load optional RTL Bootstrap CSS
-JHtml::_('bootstrap.loadCss', false, $this->direction);
-
-// Adjusting content width
-if ($this->countModules('position-7') && $this->countModules('position-8'))
-{
-	$span = "span6";
-}
-elseif ($this->countModules('position-7') && !$this->countModules('position-8'))
-{
-	$span = "span9";
-}
-elseif (!$this->countModules('position-7') && $this->countModules('position-8'))
-{
-	$span = "span9";
-}
-else
-{
-	$span = "span12";
-}
-
-// Logo file or site title param
-if ($this->params->get('logoFile'))
-{
-	$logo = '<img src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" />';
-}
-elseif ($this->params->get('sitetitle'))
-{
-	$logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) . '</span>';
-}
-else
-{
-	$logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
-}
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -130,9 +65,9 @@ else
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li class="hidden">
+                    <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>-->
+                    </li>
                    <jdoc:include type="modules" name="topmenu" />
                 </ul>
             </div>
@@ -140,6 +75,35 @@ else
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Кафедра технологій машинобудування</div>
+                <div class="intro-lead-in">Механіко-машинобудівний інститут</div>
+                <div class="intro-lead-in">НТУУ КПІ ім. І. Сікорського</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container contents">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="article<?php echo $contentwidth; ?>">
+            	    <jdoc:include type="message" /> 
+				    <jdoc:include type="component" style="xhtml" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 	<jdoc:include type="modules" name="debug" style="none" />

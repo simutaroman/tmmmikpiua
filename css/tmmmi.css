@@ -6,7 +6,6 @@
 body {
   overflow-x: hidden;
   font-family: Verdana, Geneva, sans-serif;
-  background-color: green;
 }
 p {
   font-size: 14px;
@@ -157,6 +156,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
+  max-height: 400px;
 }
 .navbar-custom .navbar-toggle {
   background-color: #ff9933;
@@ -222,8 +222,11 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+.contents {
+  padding-top: 50px;
+}
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -254,8 +257,8 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 250px;
+    padding-bottom: 100px;
     text-align: center;
   }
   header .intro-text .intro-lead-in {
