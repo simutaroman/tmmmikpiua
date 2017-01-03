@@ -71,6 +71,7 @@ $doc->setHtml5(true);
                    <jdoc:include type="modules" name="topmenu" />
                 </ul>
             </div>
+
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -80,9 +81,14 @@ $doc->setHtml5(true);
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Кафедра технологій машинобудування</div>
+                <div class="intro-heading ">
+                    
+                    Кафедра технологій машинобудування
+                </div>
                 <div class="intro-lead-in">Механіко-машинобудівний інститут</div>
                 <div class="intro-lead-in">НТУУ КПІ ім. І. Сікорського</div>
+                <div class="intro-lead-in"><a href="https://vk.com/tm_mmi_kpi" class="page-scroll"target="_blank"><span class="fa-stack fa-1x"><i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-vk fa-stack-1x fa-inverse" aria-hidden="true"></i></span></a></div>
             </div>
         </div>
     </header>
@@ -99,6 +105,17 @@ $doc->setHtml5(true);
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <?php if($this->countModules('footer')) : ?>
+                <div class="col-xs-12 copyright">
+                    <jdoc:include type="modules" name="footer" style="xhtml" />
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -598,6 +598,9 @@ section#contact {
 footer {
     padding: 25px 0;
     text-align: center;
+    font-size: @font-footer;
+    background-color: @gray-darker;
+    color: white;
     span.copyright {
         line-height: 40px;
         .heading-font;
@@ -612,13 +615,12 @@ footer {
 }
 
 // Social Buttons
-
 ul.social-buttons {
     margin-bottom: 0;
     li {
         a {
             display: block;
-            background-color: @gray-darker;
+            background-color: @theme-primary;
             height: 40px;
             width: 40px;
             border-radius: 100%;
@@ -632,7 +634,7 @@ ul.social-buttons {
             &:hover,
             &:focus,
             &:active {
-                background-color: @theme-primary;
+                background-color: darken(@theme-primary, 10%);
             }
         }
     }
