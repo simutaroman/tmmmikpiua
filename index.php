@@ -71,6 +71,11 @@ $doc->setHtml5(true);
                    <jdoc:include type="modules" name="topmenu" />
                 </ul>
             </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6"> <jdoc:include type="modules" name="lang" style="xhtml" />  </div>
+                    <div class="col-xs-12 hidden-xs col-md-6 text-right"> <jdoc:include type="modules" name="search" style="xhtml" />   </div>
+                </div>
+
 
             <!-- /.navbar-collapse -->
         </div>
