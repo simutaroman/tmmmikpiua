@@ -750,7 +750,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: @theme-primary;
+    -webkit-tap-highlight-color: @theme-primary;
 }
 
 
@@ -775,15 +775,44 @@ body {
     font-size: 12px;
 }
 
-.small li{
-    display: block;
-}
-
 .nav > li > a {
     padding: 10px 5px;
+    color: @gray-dark;
+    font-weight: bold;
 }
 
 .nav > li > a:hover {
 background-color: @theme-primary;
 color: white;
 }
+
+.moduletable > .nav {
+    border-right: 1px solid #ccc;
+}
+
+.small {
+    
+    -webkit-padding-start:10px;
+}
+
+.small li{
+    display: block;
+    padding: 4px;
+    
+}
+
+.small > li > a {
+    color: @gray-dark;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.small > li > a:hover {
+    font-weight: bolder;
+    color: @theme-darker;
+}
+
+
+
+
+

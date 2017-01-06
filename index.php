@@ -101,10 +101,10 @@ $doc->setHtml5(true);
     <div class="container contents">
         <div class="row">
             <?php if($this->countModules('left')) : ?>
-            	<div class="hidden-xs col-md-3">
+            	<div class="hidden-xs col-sm-3">
               		<jdoc:include type="modules" name="left" style="xhtml" />
               	</div>
-                <div class="col-xs-12 col-md-9">
+                <div class="col-xs-12 col-sm-9">
                     <div id="article<?php echo $contentwidth; ?>">
                         <jdoc:include type="message" /> 
                         <jdoc:include type="component" style="xhtml" />
