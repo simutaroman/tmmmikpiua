@@ -3,10 +3,10 @@
 <extension version="3.1" type="template" client="site">
 	<name>tmmmikpiua</name>
 	<version>1.0</version>
-	<creationDate>12/18/2016</creationDate>
+	<creationDate>01/08/2017</creationDate>
 	<author>Roman Simuta</author>
 	<authorEmail>simutaroman@gmail.com</authorEmail>
-	<copyright>Copyright (C) 2016 Roman Simuta. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2017 Roman Simuta. All rights reserved.</copyright>
 	<description>TPL_TMMMIKPIUA_XML_DESCRIPTION</description>
 	<files>
 		<filename>favicon.ico</filename>
@@ -16,7 +16,6 @@
 		<filename>template_thumbnail.png</filename>
 		<folder>css</folder>
 		<folder>fonts</folder>
-		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
 		<folder>language</folder>
@@ -42,20 +41,19 @@
 		<position>footer</position>
 	</positions>
 	<languages folder="language">
+		<language tag="uk-UA">uk-UA/uk-UA.tpl_tmmmikpiua.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.tpl_tmmmikpiua.sys.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_tmmmikpiua.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_tmmmikpiua.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_tmmmikpiua.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_tmmmikpiua.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="sitetitle"  type="text" default=""
-					label="JGLOBAL_TITLE"
-					description="JFIELD_ALT_PAGE_TITLE_LABEL"
-					filter="string" />
-
 				<field name="sitedescription"  type="text" default=""
 					label="JGLOBAL_DESCRIPTION"
-					description="JGLOBAL_SUBHEADING_DESC"
+					description="TPL_TMMMIKPIUA_XML_DESCRIPTION"
 					filter="string" />
 			</fieldset>
 		</fields>

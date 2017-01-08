@@ -21,20 +21,27 @@ a:hover,
 a:focus,
 a:active,
 a.active,
- {
+{
     outline: none;
+    color: @gray;
+    // text-decoration: underline;
+
 }
 
 a {
     color: @theme-primary;
+    
+    // color: darken(@theme-primary, 5%);
+    font-weight: bold;
+    text-decoration: none;
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: darken(@theme-primary, 5%);
-}
+// a:hover,
+// a:focus,
+// a:active,
+// a.active {
+//     color: darken(@theme-primary, 5%);
+// }
 
 h1, h2, h3, h4, h5, h6 {
     .heading-font;
@@ -131,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 30px;
     line-height: 15px;
 }
 }
@@ -152,6 +160,9 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-nav>.active>a {
             border-radius: 3px;
         }
+        .navbar-nav > li > a {
+            padding-left: 10px;
+        }   
     }
 }
 
@@ -786,9 +797,9 @@ background-color: @theme-primary;
 color: white;
 }
 
-.moduletable > .nav {
-    border-right: 1px solid #ccc;
-}
+// .moduletable > .nav {
+//     border-right: 1px solid #ccc;
+// }
 
 .small {
     

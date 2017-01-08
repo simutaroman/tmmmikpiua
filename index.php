@@ -35,6 +35,9 @@ $doc->setHtml5(true);
 	
 	
 	<!-- endbuild -->
+
+  	<script src="/templates/tmmmikpiua/js/jquery.js"></script>
+
 	<jdoc:include type="head" />
 
 	<!--[if lt IE 9]>
@@ -59,7 +62,9 @@ $doc->setHtml5(true);
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span><i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">TM MMI </a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <?php echo JText::_('TPL_TMMMIKPIUA_SHORTNAME'); ?>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,8 +77,8 @@ $doc->setHtml5(true);
                 </ul>
             </div>
                 <div class="row">
-                    <div class="col-xs-12 col-md-6"> <jdoc:include type="modules" name="lang" style="xhtml" />  </div>
-                    <div class="col-xs-12 hidden-xs col-md-6 text-right"> <jdoc:include type="modules" name="search" style="xhtml" />   </div>
+                    <div class="col-xs-12 col-sm-6"> <jdoc:include type="modules" name="lang" style="xhtml" />  </div>
+                    <div class="col-xs-12 hidden-xs col-sm-6 text-right"> <jdoc:include type="modules" name="search" style="xhtml" />   </div>
                 </div>
 
 
@@ -87,11 +92,14 @@ $doc->setHtml5(true);
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading ">
-                    
-                    Кафедра технологій машинобудування
+                    <?php echo JText::_('TPL_TMMMIKPIUA_DEPARTMENT'); ?>
                 </div>
-                <div class="intro-lead-in">Механіко-машинобудівний інститут</div>
-                <div class="intro-lead-in">НТУУ КПІ ім. І. Сікорського</div>
+                <div class="intro-lead-in">
+                    <?php echo JText::_('TPL_TMMMIKPIUA_INSTITUTE'); ?>
+                </div>
+                <div class="intro-lead-in">
+                    <?php echo JText::_('TPL_TMMMIKPIUA_UNIVERSITY'); ?>
+                </div>
                 <div class="intro-lead-in"><a href="https://vk.com/tm_mmi_kpi" class="page-scroll"target="_blank"><span class="fa-stack fa-1x"><i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-vk fa-stack-1x fa-inverse" aria-hidden="true"></i></span></a></div>
             </div>
@@ -146,7 +154,7 @@ $doc->setHtml5(true);
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 	 -->
-	<script src="/templates/tmmmikpiua/js/jquery.js"></script>
+	<!--<script src="/templates/tmmmikpiua/js/jquery.js"></script>-->
     <script src="/templates/tmmmikpiua/js/bootstrap.js"></script>
 	<!-- Theme JavaScript -->
     <script src="/templates/tmmmikpiua/js/tmmmi.js"></script>
